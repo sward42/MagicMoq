@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicMoq", "MagicMoq\MagicMoq.csproj", "{9D57B71B-FE77-4726-A5CA-C990A10CADD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicMoq.Tests", "MagicMoq.Tests\MagicMoq.Tests.csproj", "{8542FA95-8190-492A-9320-5D2AF3F44FCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D57B71B-FE77-4726-A5CA-C990A10CADD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D57B71B-FE77-4726-A5CA-C990A10CADD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D57B71B-FE77-4726-A5CA-C990A10CADD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D57B71B-FE77-4726-A5CA-C990A10CADD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8542FA95-8190-492A-9320-5D2AF3F44FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8542FA95-8190-492A-9320-5D2AF3F44FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8542FA95-8190-492A-9320-5D2AF3F44FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8542FA95-8190-492A-9320-5D2AF3F44FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
