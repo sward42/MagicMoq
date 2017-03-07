@@ -9,12 +9,20 @@ namespace MagicMoq.DAL
     public interface IQuestions
     {
         int OnePlusOne();
+        int ZeroPlusZero();
+        int FourPlusZero();
+        int TwoMinusZero();
         int OnePlusTwo();
+        int TwoPlusTwo();
         int OneMinusOne();
+        int FourMinusTwo();
+        int FourMinusTwoPlusOne();
         string SayNothing();
         bool ReturnFalse();
         bool ReturnTrue();
         string SayHelloWorld();
-        List<int> ReturnListOfInts();
+        List<int> CountToFive();
+        List<int> FirstThreeEvenInts();
+        List<int> FirstThreeOddInts();
     }
 }

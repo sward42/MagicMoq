@@ -12,7 +12,7 @@ namespace MagicMoq.DAL
         string EmptyString();
         bool True();
         bool False();
-        List<int> ListOfInts();
+        List<int> ListOfNInts(int n);
         int Zero();
         int One();
         int Two();

@@ -166,5 +166,54 @@ namespace MagicMoq.Tests.DAL
         {
             // Write this test
         }
+
+        [TestMethod]
+        public void EnsureFourMinusTwoPlusOneReturnsThree()
+        {
+            // Write this test
+        }
+
+        [TestMethod]
+        public void EnsureFourMinusTwoReturnsTwo()
+        {
+            // Write this test
+        }
+
+        [TestMethod]
+        public void EnsureCountToFiveReturnsListOfFiveInts()
+        {
+            // Write this test
+        }
+
+        [TestMethod]
+        public void EnsureFirstThreeEvenIntsReturnsListOfThreeEvenInts()
+        {
+            // Write this test
+        }
+
+        [TestMethod]
+        public void EnsureFirstThreeOddIntsReturnsListOfThreeOddInts()
+        {
+            // Write this test
+        }
+
+        [TestMethod]
+        public void EnsureZeroPlusZeroReturnsZero()
+        {
+            // Write this test
+        }
+
+        [TestMethod]
+        public void EnsureFourPlusZeroReturnsFour()
+        {
+            // Write this test
+        }
+
+        [TestMethod]
+        public void EnsureTwoMinusZeroReturnsTwo()
+        {
+            // Write this test
+        }
+
     }
 }
