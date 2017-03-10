@@ -102,13 +102,13 @@ namespace MagicMoq.DAL
 
         public List<int> FirstThreeOddInts()
         {
-            //var myList = new List<int>[3];
-            //myList[0] = Wand.One();
-            //myList[1] = Wand.Three();
-            //myList[2] = Wand.Three() + Wand.Two();
-            //return myList;
+            var myList = new List<int> { };
+            myList.Add(Wand.One()); 
+            myList.Add(Wand.Three());
+            myList.Add(Wand.Three() + Wand.Two());
+            return myList;
 
-            return Wand.ListOfNInts(3);
+            //return Wand.ListOfNInts(3);
         }
     }
 }

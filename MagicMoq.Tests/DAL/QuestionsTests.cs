@@ -259,7 +259,10 @@ namespace MagicMoq.Tests.DAL
         {
             // Write this test
             Mock<Answers> mock_answers = new Mock<Answers>();
-            mock_answers.Setup(a => a.ListOfNInts(It.IsAny<int>())).Returns(new List<int> { 1, 3, 5 });
+            mock_answers.Setup(a => a.One()).Returns(1);
+            mock_answers.Setup(a => a.Two()).Returns(2);
+            mock_answers.Setup(a => a.Three()).Returns(3);
+            //mock_answers.Setup(a => a.ListOfNInts(It.IsAny<int>())).Returns(new List<int> { 1, 3, 5 });
 
             Questions questions = new Questions(mock_answers.Object);
 
