@@ -230,6 +230,8 @@ namespace MagicMoq.Tests.DAL
         {
             Mock<Answers> mock_answers = new Mock<Answers>();
             mock_answers.Setup(a => a.ListOfNInts(It.IsAny<int>())).Returns(new List<int> {1, 2, 3, 4, 5 });
+            //More restrictive version
+            // mock_answers.Setup(a => a.ListOfNInts(It.Is<int>(i => i == 5))).Returns(new List<int> {1, 2, 3, 4, 5 });
 
             Questions questions = new Questions(mock_answers.Object);
 
@@ -245,6 +247,7 @@ namespace MagicMoq.Tests.DAL
             // Write this test
             Mock<Answers> mock_answers = new Mock<Answers>();
             mock_answers.Setup(a => a.ListOfNInts(It.IsAny<int>())).Returns(new List<int> { 2, 4, 6 });
+            //mock_answers.Setup(a => a.ListOfNInts(It.IsAny<int>()).Returns(new List<int> {1, 2, 3, 4, 5, 6};
 
             Questions questions = new Questions(mock_answers.Object);
 
@@ -252,6 +255,7 @@ namespace MagicMoq.Tests.DAL
             var actualResult = questions.FirstThreeEvenInts();
 
             CollectionAssert.AreEqual(expectedResult, actualResult);
+
         }
 
         [TestMethod]
@@ -262,7 +266,7 @@ namespace MagicMoq.Tests.DAL
             mock_answers.Setup(a => a.One()).Returns(1);
             mock_answers.Setup(a => a.Two()).Returns(2);
             mock_answers.Setup(a => a.Three()).Returns(3);
-            //mock_answers.Setup(a => a.ListOfNInts(It.IsAny<int>())).Returns(new List<int> { 1, 3, 5 });
+            //mock_answers.Setup(a => a.ListOfNInts(It.Is<int>(i => i == 10))).Returns(new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
 
             Questions questions = new Questions(mock_answers.Object);
 
